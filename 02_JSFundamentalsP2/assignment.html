@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Coding Challenge</h1>
+    <script>
+      // CODING CHALLENGE 1
+      const calcAverag = (a, b, c) => (a + b + c) / 3;
+      let avgDolphin = calcAverag(44, 23, 71);
+      let avgKoalas = calcAverag(65, 54, 49);
+      console.log(avgDolphin, avgKoalas);
+
+      const checkhWinner = function (scoreDolphin, scoreKoalas) {
+        if (avgDolphin >= 2 * avgKoalas) {
+          console.log(`Dolphin win(${avgDolphin} vs. ${avgKoalas})`);
+        } else if (avgKoalas >= 2 * avgDolphin) {
+          console.log(`Koalas win(${avgKoalas} vs. ${avgDolphin})`);
+        } else {
+          console.log("Noone wins!");
+        }
+      };
+
+      checkhWinner(avgDolphin, avgKoalas);
+
+      // CODING CHALLENGE 2
+    </script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>CODING CHALLENGE</h1>
+    <script>
+      // CODING CHAALLENGE 1
+      const marksWeight = 78;
+      const marksHeight = 1.69;
+      const johnsWeight = 92;
+      const johnsHeight = 1.95;
+
+      BMIMark = Math.round(marksWeight / marksHeight ** 2);
+      BMIJohn = Math.round(johnsWeight / (johnsHeight * johnsHeight));
+      const markHigherBMI = BMIMark > BMIJohn;
+
+      console.log(BMIMark, BMIJohn, markHigherBMI);
+
+      // CODING CHAALLENGE 2
+      if (markHigherBMI) {
+        console.log("Mark's BMI is higher than John's!");
+      } else {
+        console.log("John's BMI is higher than Mark's!");
+      }
+
+      if (markHigherBMI) {
+        console.log(
+          `Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})`
+        );
+      }
+
+      // CODING CHAALLENGE 3
+      const dataDolphins = (96 + 108 + 89) / 3;
+      const dataKoalas = (88 + 91 + 110) / 3;
+
+      if (dataDolphins > dataKoalas) {
+        console.log("Team Dolphins WINNER");
+      } else if (dataKoalas > dataDolphins) {
+        console.log("Team Koalas WINNER");
+      } else {
+        console.log("Game is DRAW!");
+      }
+
+      const scoreDolphins = (97 + 112 + 101) / 3;
+      const scoreKoalas = (109 + 95 + 123) / 3;
+
+      if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
+        console.log("Team Dolphins WINNER");
+      } else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) {
+        console.log("Team Koalas WINNER");
+      } else if (
+        scoreDolphins === scoreKoalas &&
+        scoreDolphins >= 100 &&
+        scoreDolphins >= 100
+      ) {
+        console.log("Game is DRAW!");
+      } else {
+        console.log("Noone win the trophy!");
+      }
+
+      // CODING CHAALLENGE 4
+      const bill = 430;
+      const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+      const totalValue = bill + tip;
+      console.log(`The bill was ${bill}, the tip was ${tip}, and the total value
+${totalValue}`);
+    </script>
+  </body>
+</html>
