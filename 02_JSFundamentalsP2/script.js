@@ -220,5 +220,84 @@ const jonas = {
   },
 };
 
+// 016 iteration the loop
+
 console.log(jonas.age);
 console.log(jonas.getSummary());
+
+for (let count = 1; count <= 10; count++) {
+  console.log(`Lifting weights repetition ${count}!`);
+}
+
+// 017 looping arrays, break n countinues statement
+
+const vidhiArray = [
+  "Vidhi",
+  "Pankhaniya",
+  2024 - 2004,
+  "Intern",
+  ["Rutu", "Janki", "Jadu"],
+];
+
+const types = [];
+
+for (let i = 0; i < vidhiArray.length; i++) {
+  // reading from array
+  console.log(vidhiArray[i], typeof vidhiArray[i]);
+
+  // filling types array
+  //   types[i] = typeof vidhiArray[i]; // way 1
+
+  //   types.push(typeof vidhiArray[i]); // way 2
+}
+
+// console.log(types);
+
+const year = [1997, 2024, 2000, 2004];
+const age = [];
+
+for (let i = 0; i < year.length; i++) {
+  age.push(2037 - year[i]);
+}
+
+console.log(age);
+
+// continue n break statement
+for (let i = 0; i < vidhiArray.length; i++) {
+  if (typeof vidhiArray[i] !== "string") continue;
+
+  console.log(vidhiArray[i], typeof vidhiArray[i]);
+}
+
+for (let i = 0; i < vidhiArray.length; i++) {
+  if (typeof vidhiArray[i] === "number") break;
+}
+
+// 018 looping backwards & loops in loops
+
+for (let i = vidhiArray.length - 1; i >= 0; i--) {
+  console.log(vidhiArray[i], typeof vidhiArray[i]);
+}
+
+for (let exercise = 1; exercise <= 3; exercise++) {
+  console.log(`----starting exercise ${exercise}`);
+
+  for (let count = 1; count < 6; count++) {
+    console.log(`Exercise ${exercise}: lifting weight repetition ${count}`);
+  }
+}
+
+// while loop
+let count = 1;
+while (count < 10) {
+  console.log(`lifting weight repetition ${count}`);
+  count++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+  console.log(`you rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log("Loop is about to end..");
+}
