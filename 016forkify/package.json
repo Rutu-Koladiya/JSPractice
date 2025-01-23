@@ -1,0 +1,18 @@
+{
+  "name": "016forkify",
+  "version": "1.0.0",
+  "description": "Recipe webapp",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Rutu Koladiya",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.13.3",
+    "parcel": "^2.13.3"
+  },
+  "dependencies": {
+    "sass": "^1.83.4"
+  }
+}
